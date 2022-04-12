@@ -19,6 +19,9 @@ const Header = () => {
 						<CustomLink className="ml-8" to="/about">
 							About
 						</CustomLink>
+						<CustomLink className="ml-8" to="/dashboard">
+							Dashboard
+						</CustomLink>
 						<Link
 							className="ml-8 px-6 pb-2 pt-1 hover:bg-slate-800 hover:text-white rounded-full border-slate-400 border-2"
 							to="/login"
@@ -27,7 +30,7 @@ const Header = () => {
 						</Link>
 						<Link
 							className="ml-8 px-6 pb-2 pt-1 hover:bg-transparent hover:text-slate-800 bg-slate-800 text-white rounded-full border-slate-400 border-2"
-							to="/sing-up"
+							to="/sign-up"
 						>
 							Sign Up
 						</Link>
