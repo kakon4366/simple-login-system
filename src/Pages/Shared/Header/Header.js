@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CustomLink from "../CustomLink/CustomLInk";
 
 const Header = () => {
 	return (
@@ -7,15 +8,17 @@ const Header = () => {
 			<div className="app-container mx-auto">
 				<nav className="flex justify-between text-slate-800">
 					<div className="logo">
-						<h2 className="text-2xl font-semibold">LogIn System</h2>
+						<Link to="/" className="text-2xl font-semibold">
+							LogIn System
+						</Link>
 					</div>
-					<ul className="text-xl">
-						<Link className="ml-8" to="/">
+					<ul className="text-xl flex items-center">
+						<CustomLink className="ml-8" to="/home">
 							Home
-						</Link>
-						<Link className="ml-8" to="/about">
+						</CustomLink>
+						<CustomLink className="ml-8" to="/about">
 							About
-						</Link>
+						</CustomLink>
 						<Link
 							className="ml-8 px-6 pb-2 pt-1 hover:bg-slate-800 hover:text-white rounded-full border-slate-400 border-2"
 							to="/login"
