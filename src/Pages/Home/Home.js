@@ -1,10 +1,12 @@
 import React from "react";
+import Slider from "./Slider/Slider";
 
 const Home = () => {
 	return (
-		<div>
-			<h2>This is home page</h2>
-		</div>
+		<section>
+			<Slider></Slider>
+			<div className="app-container mx-auto"></div>
+		</section>
 	);
 };
 
